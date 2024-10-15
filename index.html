@@ -1,9 +1,192 @@
- <!DOCTYPE html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Your Name - Resume</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            font-size: 36px;
+            color: #333;
+        }
+
+        .header, .content {
+            margin-bottom: 20px;
+        }
+
+        .header h1 {
+            margin-bottom: 10px;
+        }
+
+        .contact-info {
+            font-size: 14px;
+            color: #666;
+        }
+
+        .contact-info a {
+            color: #333;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .section-title {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            border-radius: 4px;
+            font-size: 20px;
+        }
+
+        .skills, .work-experience, .education, .projects {
+            margin-bottom: 20px;
+        }
+
+        ul {
+            list-style-type: none;
+        }
+
+        .skills ul {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .skills ul li {
+            background: #333;
+            color: #fff;
+            padding: 8px 12px;
+            border-radius: 20px;
+            margin: 5px;
+            font-size: 14px;
+        }
+
+        .work-experience h3, .education h3, .projects h3 {
+            font-size: 18px;
+            margin-bottom: 5px;
+            color: #333;
+        }
+
+        .work-experience p, .education p, .projects p {
+            font-size: 14px;
+            margin-bottom: 10px;
+            color: #555;
+        }
+
+        footer {
+            text-align: center;
+            font-size: 14px;
+            margin-top: 20px;
+        }
+
+        @media (max-width: 600px) {
+            .skills ul {
+                display: block;
+            }
+        }
+    </style>
+</head>
 <body>
+    <div class="container">
+        <div class="header">
+            <h1>Your Name</h1>
+            <p class="contact-info">
+                Email: <a href="mailto:youremail@example.com">youremail@example.com</a> | Phone: (123) 456-7890 | 
+                <a href="https://yourgithubusername.github.io" target="_blank">GitHub</a> | 
+                <a href="https://www.linkedin.com/in/yourprofile" target="_blank">LinkedIn</a>
+            </p>
+        </div>
 
-<h1>My First Heading</h1>
-<p>My first paragraph.</p>
+        <div class="content">
+            <!-- Professional Summary -->
+            <div class="summary">
+                <h2 class="section-title">Professional Summary</h2>
+                <p>
+                    Motivated software developer with over 3 years of experience in full-stack development, 
+                    building responsive web applications, and solving complex problems. 
+                    Seeking to leverage skills in a fast-paced, collaborative environment.
+                </p>
+            </div>
 
+            <!-- Skills -->
+            <div class="skills">
+                <h2 class="section-title">Skills</h2>
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                    <li>React</li>
+                    <li>Node.js</li>
+                    <li>Python</li>
+                    <li>Git/GitHub</li>
+                    <li>REST APIs</li>
+                </ul>
+            </div>
+
+            <!-- Work Experience -->
+            <div class="work-experience">
+                <h2 class="section-title">Work Experience</h2>
+                <h3>Software Developer | ABC Company</h3>
+                <p>January 2021 - Present</p>
+                <p>
+                    Developed and maintained web applications using HTML, CSS, and JavaScript. 
+                    Collaborated with cross-functional teams to design, build, and implement scalable solutions.
+                </p>
+
+                <h3>Junior Developer | XYZ Inc.</h3>
+                <p>June 2019 - December 2020</p>
+                <p>
+                    Assisted in the development of internal tools using React and Node.js, improving overall system efficiency.
+                </p>
+            </div>
+
+            <!-- Education -->
+            <div class="education">
+                <h2 class="section-title">Education</h2>
+                <h3>Bachelor of Science in Computer Science</h3>
+                <p>University of Example, Graduated May 2019</p>
+            </div>
+
+            <!-- Projects -->
+            <div class="projects">
+                <h2 class="section-title">Projects</h2>
+                <h3>Portfolio Website</h3>
+                <p>
+                    Designed and built a personal portfolio website to showcase projects and blog posts using HTML, CSS, and JavaScript.
+                </p>
+
+                <h3>Weather App</h3>
+                <p>
+                    Created a responsive weather application using React and OpenWeather API that allows users to search for real-time weather updates.
+                </p>
+            </div>
+        </div>
+
+        <footer>
+            &copy; 2024 Your Name. All rights reserved.
+        </footer>
+    </div>
 </body>
-</html> 
+</html>
