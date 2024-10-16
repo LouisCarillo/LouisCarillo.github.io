@@ -7,62 +7,120 @@
     <title>Louis Carillo - Resume</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
+            font-family: 'Arial', sans-serif;
+            background-color: #f5f5f5;
+            color: #333;
             margin: 0;
             padding: 0;
-            color: #333;
         }
 
         .container {
-            max-width: 900px;
+            max-width: 1200px;
             margin: 50px auto;
-            padding: 20px;
             background-color: #fff;
-            border-radius: 10px;
+            padding: 20px;
             box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            grid-gap: 20px;
+            border-radius: 8px;
         }
 
-        h1, h2 {
+        /* Left Column (Personal Info) */
+        .sidebar {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        .profile-pic {
             text-align: center;
             margin-bottom: 20px;
         }
 
-        .header {
+        .profile-pic img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 3px solid white;
+        }
+
+        .sidebar h2, .sidebar p {
             text-align: center;
+            margin-bottom: 20px;
         }
 
-        .header p {
-            font-size: 16px;
-        }
-
-        .contact-info a {
+        .sidebar a {
             color: #0066cc;
             text-decoration: none;
         }
 
-        /* Collapsible sections */
+        .section-title {
+            background-color: #444;
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        .skills, .languages {
+            margin-bottom: 20px;
+        }
+
+        .skills ul, .languages ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        .skills li, .languages li {
+            background-color: #555;
+            color: white;
+            padding: 8px;
+            border-radius: 5px;
+            margin: 5px 0;
+            text-align: center;
+        }
+
+        /* Right Column (Main Content) */
+        .main-content {
+            padding: 20px;
+        }
+
+        h1 {
+            font-size: 28px;
+            color: #333;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        h3 {
+            font-size: 20px;
+            color: #333;
+            margin-bottom: 5px;
+        }
+
         .collapsible {
-            background-color: #333;
+            background-color: #0066cc;
             color: white;
             cursor: pointer;
-            padding: 14px 20px;
+            padding: 12px;
             width: 100%;
             border: none;
             text-align: left;
-            outline: none;
             font-size: 18px;
             margin-bottom: 10px;
             border-radius: 5px;
-            transition: background-color 0.3s;
         }
 
         .collapsible:hover {
-            background-color: #555;
+            background-color: #004c99;
         }
 
         .content {
-            padding: 0 20px;
+            padding: 0 15px;
             max-height: 0;
             overflow: hidden;
             transition: max-height 0.3s ease-out;
@@ -76,88 +134,114 @@
             font-size: 14px;
         }
 
+        /* Footer */
         footer {
             text-align: center;
             padding: 20px;
             font-size: 12px;
+            margin-top: 30px;
+            color: #666;
         }
+
     </style>
 </head>
 <body>
     <div class="container">
-        <div class="header">
-            <h1>Louis Carillo</h1>
-            <p>20 Boulevard du président Franklin Roosevelt, 33800 Bordeaux</p>
-            <p>Phone: 0750255438 | Email: <a href="mailto:louiscarillo.lc@gmail.com">louiscarillo.lc@gmail.com</a></p>
+        <!-- Sidebar (Left Column) -->
+        <div class="sidebar">
+            <div class="profile-pic">
+                <img src="profile-picture.jpg" alt="Louis Carillo">
+            </div>
+            <h2>Louis Carillo</h2>
+            <p>20 Boulevard du président Franklin Roosevelt<br>33800 Bordeaux</p>
+            <p>Phone: 0750255438</p>
+            <p>Email: <a href="mailto:louiscarillo.lc@gmail.com">louiscarillo.lc@gmail.com</a></p>
+
+            <div class="section-title">Skills</div>
+            <div class="skills">
+                <ul>
+                    <li>Python</li>
+                    <li>C++</li>
+                    <li>JavaScript</li>
+                </ul>
+            </div>
+
+            <div class="section-title">Languages</div>
+            <div class="languages">
+                <ul>
+                    <li>French (Native)</li>
+                    <li>English (Fluent)</li>
+                    <li>Spanish (Proficient)</li>
+                    <li>Japanese (Basic)</li>
+                </ul>
+            </div>
         </div>
 
-        <!-- Education -->
-        <button type="button" class="collapsible">Education</button>
-        <div class="content">
-            <p><strong>Ecole Normale Supérieure, Paris-Saclay (Gif-sur-Yvette)</strong><br>
-                September 2020 to present<br>
-                - Elite school: teaching and scientific research<br>
-                - Physics Department
-            </p>
-            <p><strong>Lycée Michel Montaigne, Bordeaux</strong><br>
-                September 2018 to June 2020<br>
-                - Preparatory class for competitive exams, aimed at enrolling in engineering schools
-            </p>
-            <p><strong>Lycée Gustave Eiffel, Bordeaux</strong><br>
-                September 2015 to June 2018<br>
-                - Bacalaureat with Best Honours
-            </p>
-        </div>
+        <!-- Main Content (Right Column) -->
+        <div class="main-content">
+            <h1>Resume</h1>
 
-        <!-- Experience -->
-        <button type="button" class="collapsible">Experience</button>
-        <div class="content">
-            <p><strong>Tutoring (September 2016 to today)</strong><br>
-                Subjects: piano, maths, physics<br>
-                - Tutoring young teenagers (ages 12 to 16)
-            </p>
-        </div>
+            <!-- Education -->
+            <button type="button" class="collapsible">Education</button>
+            <div class="content">
+                <p><strong>Ecole Normale Supérieure, Paris-Saclay (Gif-sur-Yvette)</strong><br>
+                    September 2020 to present<br>
+                    - Elite school: teaching and scientific research<br>
+                    - Physics Department
+                </p>
+                <p><strong>Lycée Michel Montaigne, Bordeaux</strong><br>
+                    September 2018 to June 2020<br>
+                    - Preparatory class for competitive exams, aimed at enrolling in engineering schools
+                </p>
+                <p><strong>Lycée Gustave Eiffel, Bordeaux</strong><br>
+                    September 2015 to June 2018<br>
+                    - Bacalaureat with Best Honours
+                </p>
+            </div>
 
-        <!-- Personal Plans -->
-        <button type="button" class="collapsible">Personal Plans</button>
-        <div class="content">
-            <p><strong>TIPE – Study on Waves and Seawalls</strong><br>
-                - One-year study on a problem related to waves and seawalls during free time.<br>
-                - Involved modelization and experiments to propose theoretical and practical solutions.
-            </p>
-            <p><strong>Homemade Robot</strong><br>
-                - Built a robot by recycling old electronic components.<br>
-                - Fields involved: Applied electricity, mechanics, and computer science.
-            </p>
-        </div>
+            <!-- Experience -->
+            <button type="button" class="collapsible">Experience</button>
+            <div class="content">
+                <p><strong>Tutoring (September 2016 to today)</strong><br>
+                    Subjects: piano, maths, physics<br>
+                    - Tutoring young teenagers (ages 12 to 16)
+                </p>
+            </div>
 
-        <!-- Skills -->
-        <button type="button" class="collapsible">Skills</button>
-        <div class="content">
-            <p><strong>Programming:</strong> Python, C++, JavaScript</p>
-            <p><strong>Languages:</strong> French (native), English, Spanish, Japanese</p>
-        </div>
+            <!-- Personal Plans -->
+            <button type="button" class="collapsible">Personal Projects</button>
+            <div class="content">
+                <p><strong>TIPE – Study on Waves and Seawalls</strong><br>
+                    - One-year study on a problem related to waves and seawalls during free time.<br>
+                    - Involved modelization and experiments to propose theoretical and practical solutions.
+                </p>
+                <p><strong>Homemade Robot</strong><br>
+                    - Built a robot by recycling old electronic components.<br>
+                    - Fields involved: Applied electricity, mechanics, and computer science.
+                </p>
+            </div>
 
-        <!-- Achievements -->
-        <button type="button" class="collapsible">Achievements</button>
-        <div class="content">
-            <p><strong>Olympiade de Mathématiques</strong><br>
-                - A national-level mathematics competition<br>
-                - Ranked in the Top 30 nationally
-            </p>
-        </div>
+            <!-- Achievements -->
+            <button type="button" class="collapsible">Achievements</button>
+            <div class="content">
+                <p><strong>Olympiade de Mathématiques</strong><br>
+                    - A national-level mathematics competition<br>
+                    - Ranked in the Top 30 nationally
+                </p>
+            </div>
 
-        <!-- Hobbies -->
-        <button type="button" class="collapsible">Hobbies</button>
-        <div class="content">
-            <p><strong>Music:</strong> Piano, guitar, singing</p>
-            <p><strong>Sports:</strong> Fitness, skateboarding</p>
-            <p><strong>Reading:</strong> Classics, philosophy</p>
-        </div>
+            <!-- Hobbies -->
+            <button type="button" class="collapsible">Hobbies</button>
+            <div class="content">
+                <p><strong>Music:</strong> Piano, guitar, singing</p>
+                <p><strong>Sports:</strong> Fitness, skateboarding</p>
+                <p><strong>Reading:</strong> Classics, philosophy</p>
+            </div>
 
-        <footer>
-            &copy; 2024 Louis Carillo. All rights reserved.
-        </footer>
+            <footer>
+                &copy; 2024 Louis Carillo. All rights reserved.
+            </footer>
+        </div>
     </div>
 
     <script>
