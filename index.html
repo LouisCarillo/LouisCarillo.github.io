@@ -56,12 +56,20 @@
             margin-bottom: 10px;
         }
 
-        /* Skills with programming logos */
-        .skills, .languages {
+        .contact, .skills, .languages, .links {
             margin-bottom: 20px;
+            text-align: center;
         }
 
-        .skills ul, .languages ul {
+        .contact a, .links a {
+            color: #ffdcfa;
+            text-decoration: none;
+            font-size: 16px;
+            display: block;
+            margin: 5px 0;
+        }
+
+        .skills ul, .languages ul, .links ul {
             list-style-type: none;
             padding-left: 0;
             display: flex;
@@ -69,31 +77,17 @@
             justify-content: center;
         }
 
-        .skills li, .languages li {
+        .skills li, .languages li, .links li {
             display: flex;
             align-items: center;
             margin: 10px;
             font-size: 14px;
         }
 
-        .skills img {
+        .skills img, .links img {
             width: 30px;
             height: 30px;
             margin-right: 10px;
-        }
-
-        /* Contact Me Section */
-        .contact {
-            text-align: center;
-            margin-bottom: 20px;
-        }
-
-        .contact a {
-            color: #ffdcfa;
-            text-decoration: none;
-            font-size: 16px;
-            display: block;
-            margin: 5px 0;
         }
 
         /* Right Column (Main Content) */
@@ -107,17 +101,21 @@
             margin-bottom: 40px;
             border-bottom: 2px solid #ccc;
             padding-bottom: 20px;
+            background-color: #6a5fa4;
+            color: white;
+            border-radius: 8px;
+            padding: 20px;
         }
 
         .main-header h1 {
-            font-size: 36px;
-            color: #4b3f72;
+            font-size: 42px;
+            font-weight: bold;
             margin-bottom: 10px;
         }
 
         .main-header p {
-            font-size: 20px;
-            color: #6a5fa4;
+            font-size: 24px;
+            font-weight: bold;
         }
 
         h3 {
@@ -147,11 +145,11 @@
             }
 
             .main-header h1 {
-                font-size: 28px;
+                font-size: 32px;
             }
 
             .main-header p {
-                font-size: 18px;
+                font-size: 20px;
             }
 
             h3 {
@@ -168,15 +166,25 @@
                 <img src="profile-picture.jpg" alt="Louis Carillo">
             </div>
 
-            <div class="section-title">Skills</div>
+            <!-- Contact Me Section -->
+            <div class="section-title">Contact Me</div>
+            <div class="contact">
+                <a href="mailto:louiscarillo.lc@gmail.com">louiscarillo.lc@gmail.com</a>
+                <a href="tel:0750255438">0750255438</a>
+            </div>
+
+            <!-- Programming Skills Section -->
+            <div class="section-title">Programming Skills</div>
             <div class="skills">
                 <ul>
-                    <li><img src="https://abrudz.github.io/logos/python.svg" alt="Python">Python</li>
-                    <li><img src="https://abrudz.github.io/logos/cpp.svg" alt="C++">C++</li>
-                    <li><img src="https://abrudz.github.io/logos/javascript.svg" alt="JavaScript">JavaScript</li>
+                    <li><img src="logos/python.svg" alt="Python">Python</li>
+                    <li><img src="logos/cpp.svg" alt="C++">C++</li>
+                    <li><img src="logos/rust.svg" alt="Rust">Rust</li>
+                    <li><img src="logos/julia.svg" alt="Julia">Julia</li>
                 </ul>
             </div>
 
+            <!-- Languages Section -->
             <div class="section-title">Languages</div>
             <div class="languages">
                 <ul>
@@ -187,11 +195,13 @@
                 </ul>
             </div>
 
-            <!-- Contact Me Section -->
-            <div class="section-title">Contact Me</div>
-            <div class="contact">
-                <a href="mailto:louiscarillo.lc@gmail.com">louiscarillo.lc@gmail.com</a>
-                <a href="tel:0750255438">0750255438</a>
+            <!-- Links Section -->
+            <div class="section-title">Links</div>
+            <div class="links">
+                <ul>
+                    <li><img src="logos/github.svg" alt="GitHub"><a href="https://github.com/yourusername" target="_blank">GitHub</a></li>
+                    <li><img src="logos/pdf.svg" alt="PDF"><a href="resume.pdf" download>Download Resume (PDF)</a></li>
+                </ul>
             </div>
         </div>
 
