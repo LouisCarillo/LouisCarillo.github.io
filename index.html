@@ -66,6 +66,7 @@
             margin-bottom: 10px;
         }
 
+        /* Skills with icons */
         .skills, .languages {
             margin-bottom: 20px;
         }
@@ -73,15 +74,23 @@
         .skills ul, .languages ul {
             list-style-type: none;
             padding-left: 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
         }
 
         .skills li, .languages li {
-            background-color: #555;
+            display: flex;
+            align-items: center;
+            margin: 10px;
+            font-size: 14px;
             color: white;
-            padding: 8px;
-            border-radius: 5px;
-            margin: 5px 0;
-            text-align: center;
+        }
+
+        .skills img, .languages img {
+            width: 25px;
+            height: 25px;
+            margin-right: 10px;
         }
 
         /* Right Column (Main Content) */
@@ -102,39 +111,10 @@
             margin-bottom: 5px;
         }
 
-        .collapsible {
-            background-color: #0066cc;
-            color: white;
-            cursor: pointer;
-            padding: 12px;
-            width: 100%;
-            border: none;
-            text-align: left;
-            font-size: 18px;
-            margin-bottom: 10px;
-            border-radius: 5px;
+        .section {
+            margin-bottom: 30px;
         }
 
-        .collapsible:hover {
-            background-color: #004c99;
-        }
-
-        .content {
-            padding: 0 15px;
-            max-height: 0;
-            overflow: hidden;
-            transition: max-height 0.3s ease-out;
-            background-color: #f9f9f9;
-            border-radius: 5px;
-            margin-bottom: 10px;
-        }
-
-        .content p {
-            padding: 10px 0;
-            font-size: 14px;
-        }
-
-        /* Footer */
         footer {
             text-align: center;
             padding: 20px;
@@ -142,7 +122,6 @@
             margin-top: 30px;
             color: #666;
         }
-
     </style>
 </head>
 <body>
@@ -153,26 +132,25 @@
                 <img src="profile-picture.jpg" alt="Louis Carillo">
             </div>
             <h2>Louis Carillo</h2>
-            <p>20 Boulevard du président Franklin Roosevelt<br>33800 Bordeaux</p>
             <p>Phone: 0750255438</p>
             <p>Email: <a href="mailto:louiscarillo.lc@gmail.com">louiscarillo.lc@gmail.com</a></p>
 
             <div class="section-title">Skills</div>
             <div class="skills">
                 <ul>
-                    <li>Python</li>
-                    <li>C++</li>
-                    <li>JavaScript</li>
+                    <li><img src="python-logo.png" alt="Python">Python</li>
+                    <li><img src="cpp-logo.png" alt="C++">C++</li>
+                    <li><img src="js-logo.png" alt="JavaScript">JavaScript</li>
                 </ul>
             </div>
 
             <div class="section-title">Languages</div>
             <div class="languages">
                 <ul>
-                    <li>French (Native)</li>
-                    <li>English (Fluent)</li>
-                    <li>Spanish (Proficient)</li>
-                    <li>Japanese (Basic)</li>
+                    <li><img src="france-flag.png" alt="French Flag">French (Native)</li>
+                    <li><img src="uk-flag.png" alt="UK Flag">English (Fluent)</li>
+                    <li><img src="spain-flag.png" alt="Spain Flag">Spanish (Proficient)</li>
+                    <li><img src="japan-flag.png" alt="Japan Flag">Japanese (Basic)</li>
                 </ul>
             </div>
         </div>
@@ -181,9 +159,34 @@
         <div class="main-content">
             <h1>Resume</h1>
 
-            <!-- Education -->
-            <button type="button" class="collapsible">Education</button>
-            <div class="content">
+            <!-- Current Research -->
+            <div class="section">
+                <h3>Current Research</h3>
+                <p>
+                    I am currently conducting research on waves and seawalls as part of a TIPE (Travail d'Initiative Personnelle Encadré) project. This year-long study involves both theoretical modelization and practical experiments to develop solutions to improve the design and resilience of seawalls against wave impacts.
+                </p>
+            </div>
+
+            <!-- Publications -->
+            <div class="section">
+                <h3>Publications</h3>
+                <p>
+                    - **Wave and Seawall Resilience**: A study on theoretical and applied physics, expected to be published in a national journal in 2024.
+                    <br>- Ongoing work on electronics and robotics, documenting the building of a homemade robot from recycled materials.
+                </p>
+            </div>
+
+            <!-- Teaching -->
+            <div class="section">
+                <h3>Teaching</h3>
+                <p>
+                    I have been tutoring teenagers (ages 12 to 16) in piano, mathematics, and physics since 2016. My teaching approach involves fostering a deep understanding of core concepts, with a focus on problem-solving and creative thinking.
+                </p>
+            </div>
+
+            <!-- Studies -->
+            <div class="section">
+                <h3>Studies</h3>
                 <p><strong>Ecole Normale Supérieure, Paris-Saclay (Gif-sur-Yvette)</strong><br>
                     September 2020 to present<br>
                     - Elite school: teaching and scientific research<br>
@@ -199,64 +202,10 @@
                 </p>
             </div>
 
-            <!-- Experience -->
-            <button type="button" class="collapsible">Experience</button>
-            <div class="content">
-                <p><strong>Tutoring (September 2016 to today)</strong><br>
-                    Subjects: piano, maths, physics<br>
-                    - Tutoring young teenagers (ages 12 to 16)
-                </p>
-            </div>
-
-            <!-- Personal Plans -->
-            <button type="button" class="collapsible">Personal Projects</button>
-            <div class="content">
-                <p><strong>TIPE – Study on Waves and Seawalls</strong><br>
-                    - One-year study on a problem related to waves and seawalls during free time.<br>
-                    - Involved modelization and experiments to propose theoretical and practical solutions.
-                </p>
-                <p><strong>Homemade Robot</strong><br>
-                    - Built a robot by recycling old electronic components.<br>
-                    - Fields involved: Applied electricity, mechanics, and computer science.
-                </p>
-            </div>
-
-            <!-- Achievements -->
-            <button type="button" class="collapsible">Achievements</button>
-            <div class="content">
-                <p><strong>Olympiade de Mathématiques</strong><br>
-                    - A national-level mathematics competition<br>
-                    - Ranked in the Top 30 nationally
-                </p>
-            </div>
-
-            <!-- Hobbies -->
-            <button type="button" class="collapsible">Hobbies</button>
-            <div class="content">
-                <p><strong>Music:</strong> Piano, guitar, singing</p>
-                <p><strong>Sports:</strong> Fitness, skateboarding</p>
-                <p><strong>Reading:</strong> Classics, philosophy</p>
-            </div>
-
             <footer>
                 &copy; 2024 Louis Carillo. All rights reserved.
             </footer>
         </div>
     </div>
-
-    <script>
-        const collapsibles = document.querySelectorAll(".collapsible");
-        collapsibles.forEach((item) => {
-            item.addEventListener("click", function() {
-                this.classList.toggle("active");
-                const content = this.nextElementSibling;
-                if (content.style.maxHeight) {
-                    content.style.maxHeight = null;
-                } else {
-                    content.style.maxHeight = content.scrollHeight + "px";
-                }
-            });
-        });
-    </script>
 </body>
 </html>
