@@ -47,6 +47,14 @@
             border: 3px solid white;
         }
 
+        .name-mobile {
+            text-align: center;
+            color: white;
+            font-size: 20px;
+            margin-top: 10px;
+            display: none; /* Hidden by default */
+        }
+
         .section-title {
             background-color: #6a5fa4;
             color: white;
@@ -124,6 +132,7 @@
             margin-bottom: 15px;
             border-bottom: 2px solid #6a5fa4;
             padding-bottom: 10px;
+            background-color: #e0d7f5; /* Slightly lighter background */
         }
 
         .section {
@@ -155,6 +164,15 @@
             h3 {
                 font-size: 20px;
             }
+
+            .name-mobile {
+                display: block; /* Show on mobile */
+            }
+        }
+
+        /* Improve visibility for Rust and Julia logos */
+        .skills img {
+            filter: brightness(0) invert(1); /* Invert colors for better contrast */
         }
     </style>
 </head>
@@ -165,6 +183,7 @@
             <div class="profile-pic">
                 <img src="profile-picture.jpg" alt="Louis Carillo">
             </div>
+            <div class="name-mobile">Louis Carillo</div> <!-- Mobile Name -->
 
             <!-- Contact Me Section -->
             <div class="section-title">Contact Me</div>
@@ -177,10 +196,10 @@
             <div class="section-title">Programming Skills</div>
             <div class="skills">
                 <ul>
-                    <li><img src="logos/python.svg" alt="Python"></li>
-                    <li><img src="logos/cpp.svg" alt="C++"></li>
-                    <li><img src="logos/rust.svg" alt="Rust"></li>
-                    <li><img src="logos/julia.svg" alt="Julia"></li>
+                    <li><img src="logos/python.svg" alt="Python"> Python</li>
+                    <li><img src="logos/cpp.svg" alt="C++"> C++</li>
+                    <li><img src="logos/rust.svg" alt="Rust"> Rust</li>
+                    <li><img src="logos/julia.svg" alt="Julia"> Julia</li>
                 </ul>
             </div>
 
@@ -188,10 +207,10 @@
             <div class="section-title">Languages</div>
             <div class="languages">
                 <ul>
-                    <li>🇫🇷</li>
-                    <li>🇬🇧</li>
-                    <li>🇩🇪</li>
-                    <li>🇮🇹</li>
+                    <li>French</li>
+                    <li>English</li>
+                    <li>German</li>
+                    <li>Italian</li>
                 </ul>
             </div>
 
@@ -216,11 +235,8 @@
             <!-- Current Research -->
             <div class="section">
                 <h3>Current Research</h3>
-                <p>
-                    I am currently conducting research on waves and seawalls as part of a TIPE (Travail d'Initiative Personnelle Encadré) project. This year-long study involves both theoretical modelization and practical experiments to develop solutions to improve the design and resilience of seawalls against wave impacts.
-                </p>
+                <p>I am currently conducting research on waves and seawalls as part of a TIPE (Travail d'Initiative Personnelle Encadré) project. This year-long study involves both theoretical modelization and practical experiments to develop solutions to improve the design and resilience of seawalls against wave impacts.</p>
             </div>
-
 
             <!-- Publications Section -->
             <div class="section">
@@ -278,7 +294,7 @@
                     Advanced Python topics for STEM bachelor students, covering classes, inheritance, error handling, and interfaces.
                 </p>
                 <p><strong>Scientific Foundations of Energy Transition</strong><br>
-                    <i> First semester 2024/2025 at ENPC</i><br>
+                    <i>First semester 2024/2025 at ENPC</i><br>
                     Introduction to physics tied to renewable energies for bachelor students, covering radiation theory, semi-conductors.
                 </p>
                 <p><strong>Tutoring</strong><br>
