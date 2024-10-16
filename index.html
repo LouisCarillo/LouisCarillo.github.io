@@ -47,14 +47,6 @@
             border: 3px solid white;
         }
 
-        .name-mobile {
-            text-align: center;
-            color: white;
-            font-size: 20px;
-            margin-top: 10px;
-            display: none; /* Hidden by default */
-        }
-
         .section-title {
             background-color: #6a5fa4;
             color: white;
@@ -132,7 +124,6 @@
             margin-bottom: 15px;
             border-bottom: 2px solid #6a5fa4;
             padding-bottom: 10px;
-            background-color: #e0d7f5; /* Slightly lighter background */
         }
 
         .section {
@@ -159,20 +150,22 @@
 
             .main-header p {
                 font-size: 20px;
+
             }
 
             h3 {
                 font-size: 20px;
             }
-
-            .name-mobile {
-                display: block; /* Show on mobile */
-            }
+            
         }
-
-        /* Improve visibility for Rust and Julia logos */
-        .skills img {
-            filter: brightness(0) invert(1); /* Invert colors for better contrast */
+        .circle {
+            display: inline-block;
+            width: 8px;  /* Size of the circle */
+            height: 8px; /* Size of the circle */
+            background-color: #6a5fa4; /* Color of the circle */
+            border-radius: 50%; /* Makes it a circle */
+            margin-right: 5px; /* Space between the circle and the text */
+            vertical-align: middle; /* Align with the text */
         }
     </style>
 </head>
@@ -183,7 +176,7 @@
             <div class="profile-pic">
                 <img src="profile-picture.jpg" alt="Louis Carillo">
             </div>
-            <div class="name-mobile">Louis Carillo</div> <!-- Mobile Name -->
+
 
             <!-- Contact Me Section -->
             <div class="section-title">Contact Me</div>
@@ -196,10 +189,10 @@
             <div class="section-title">Programming Skills</div>
             <div class="skills">
                 <ul>
-                    <li><img src="logos/python.svg" alt="Python"> Python</li>
-                    <li><img src="logos/cpp.svg" alt="C++"> C++</li>
-                    <li><img src="logos/rust.svg" alt="Rust"> Rust</li>
-                    <li><img src="logos/julia.svg" alt="Julia"> Julia</li>
+                    <li><img src="logos/python.svg" alt="Python">Python</li>
+                    <li><img src="logos/cpp.svg" alt="C++">C++</li>
+                    <li><img src="logos/rust.svg" alt="Rust">Rust</li>
+                    <li><img src="logos/julia.svg" alt="Julia">Julia</li>
                 </ul>
             </div>
 
@@ -207,10 +200,10 @@
             <div class="section-title">Languages</div>
             <div class="languages">
                 <ul>
-                    <li>French</li>
-                    <li>English</li>
-                    <li>German</li>
-                    <li>Italian</li>
+                    <li>🇫🇷</li>
+                    <li>🇬🇧</li>
+                    <li>🇩🇪</li>
+                    <li>🇮🇹</li>
                 </ul>
             </div>
 
@@ -235,16 +228,19 @@
             <!-- Current Research -->
             <div class="section">
                 <h3>Current Research</h3>
-                <p>I am currently conducting research on waves and seawalls as part of a TIPE (Travail d'Initiative Personnelle Encadré) project. This year-long study involves both theoretical modelization and practical experiments to develop solutions to improve the design and resilience of seawalls against wave impacts.</p>
+                <p>
+                    I am currently working on my PhD under the supervision of Tony Lelièvre, Urbain Vaes and Gabriel Stoltz on the topic: <i>"Metastability in statistical physics: a mathematical and numerical analysis"</i>. The specific problem that interest me right now is the <i>Narrow escape problem</i>. In a few words, a brownian motion is trapped in a bounded 2 or 3 dimensional domain with 1 (or many) small holes. The goal is to compute precisely the assymptotic of the exit time and distribution of the exit point in the limit where the holes decrease in size. 
+                </p>
             </div>
+
 
             <!-- Publications Section -->
             <div class="section">
                 <h3>Publications</h3>
-                <p><strong>Eigenvector Dreaming</strong><br>
+                <p><span class="circle"></span><strong>Eigenvector Dreaming</strong><br>
                     <i>Marco Benedetti, Louis Carillo, Enzo Marinari, Marc Mèzard, J. Stat. Mech. (2024)</i> <a href="https://arxiv.org/abs/2308.13445">arXiv:2308.13445</a><br>
                 </p>
-                <p><strong>Hard-disk computer simulations — a historic perspective</strong><br>
+                <p><span class="circle"></span><strong>Hard-disk computer simulations — a historic perspective</strong><br>
                     <i> Botao Li, Yoshihiko Nishikawa, Philipp Hoellmer, Louis Carillo, A. C. Maggs, Werner Krauth, J. Chem. Phys. (2022)</i><a href="https://arxiv.org/abs/2207.07715">arXiv:2207.07715</a>
                     <br>
                 </p>
@@ -253,14 +249,14 @@
             <!-- Conferences Section -->
             <div class="section">
                 <h3>Conferences</h3>
-                <p><strong>Workshop “Uncertainty Quantification in Molecular Simulation”</strong><br>
+                <p><span class="circle"></span><strong>Workshop “Uncertainty Quantification in Molecular Simulation”</strong><br>
                     Max Planck Institute for Dynamics of Complex Technical Systems, 29-30 August 2024
                 </p>
-                <p><strong>Workshop on Synergies Between Mathematics, Data Science, and Molecular Simulations in Materials Science</strong><br>
+                <p><span class="circle"></span><strong>Workshop on Synergies Between Mathematics, Data Science, and Molecular Simulations in Materials Science</strong><br>
                     University of Birmingham, 3-5 July 2024<br>
                     <a href="posterBirmingham.pdf" download>Download Poster (PDF)</a>
                 </p>
-                <p><strong>Kinetic equation, mathematical physics and probability</strong><br>
+                <p><span class="circle"></span><strong>Kinetic equation, mathematical physics and probability</strong><br>
                     BCAM, Bilbao, 17-21 June 2024
                 </p>
             </div>
@@ -268,19 +264,19 @@
             <!-- Experience Section -->
             <div class="section">
                 <h3>Experience</h3>
-                <p><strong>Master 2 Internship — Microcanonical Langevin Dynamics</strong><br>
+                <p><span class="circle"></span><strong>Master 2 Internship — Microcanonical Langevin Dynamics</strong><br>
                     <i>4 months in 2024 — With Gabriel Stoltz's team in ENPC</i><br>
                     Research on a non-standard sampling method for better understanding and more efficient implementation.
                 </p>
-                <p><strong>Gap year — Dreaming in Hopfield Networks</strong><br>
+                <p><span class="circle"></span><strong>Gap year — Dreaming in Hopfield Networks</strong><br>
                     <i>2022/2023 academic year — With Enzo Marinari's team in La Sapienza</i><br>
                     Analytical and numerical studies on Hopfield models and new training methods. This resulted in a published paper.
                 </p>
-                <p><strong>Master 1 Internship — Symmetries in Quantum Physics</strong><br>
+                <p><span class="circle"></span><strong>Master 1 Internship — Symmetries in Quantum Physics</strong><br>
                     <i>15 weeks in Spring/Summer 2022 — With Ulrich Scholwöck's team in LMU</i><br>
                     Added support for U(1) and SU(2) symmetries in quantum Hamiltonian system simulations like atomic chains.
                 </p>
-                <p><strong>Bachelor Internship — Hard Disks in 2D</strong><br>
+                <p><span class="circle"></span><strong>Bachelor Internship — Hard Disks in 2D</strong><br>
                     <i>6 weeks in Summer 2021 — With Werner Krauth's team in ENS</i><br>
                     Historical aspects and simple solutions for calculating pressure in 2D hard-sphere systems. This resulted in a published paper.
                 </p>
@@ -289,15 +285,15 @@
             <!-- Teaching Section -->
             <div class="section">
                 <h3>Teaching</h3>
-                <p><strong>Python Programming</strong><br>
+                <p><span class="circle"></span><strong>Python Programming</strong><br>
                     <i>First semester 2024/2025 at ENPC</i><br>
                     Advanced Python topics for STEM bachelor students, covering classes, inheritance, error handling, and interfaces.
                 </p>
-                <p><strong>Scientific Foundations of Energy Transition</strong><br>
-                    <i>First semester 2024/2025 at ENPC</i><br>
+                <p><span class="circle"></span><strong>Scientific Foundations of Energy Transition</strong><br>
+                    <i> First semester 2024/2025 at ENPC</i><br>
                     Introduction to physics tied to renewable energies for bachelor students, covering radiation theory, semi-conductors.
                 </p>
-                <p><strong>Tutoring</strong><br>
+                <p><span class="circle"></span><strong>Tutoring</strong><br>
                     During my Bachelor's, I tutored students in Maths, Physics, and Piano.
                 </p>
             </div>
@@ -305,13 +301,13 @@
             <!-- Studies Section -->
             <div class="section">
                 <h3>Studies</h3>
-                <p><strong>Master in Physics of Complex Systems</strong><br>
+                <p><span class="circle"></span><strong>Master in Physics of Complex Systems</strong><br>
                     Ecole Normale Supérieure, Paris-Saclay (Gif-sur-Yvette), 2024<br>
                 </p>
-                <p><strong>Bachelor in Fundamental Physics</strong><br>
+                <p><span class="circle"></span><strong>Bachelor in Fundamental Physics</strong><br>
                     Ecole Normale Supérieure, Paris-Saclay (Gif-sur-Yvette), 2021<br>
                 </p>
-                <p><strong>Prépa MPSI PSI</strong><br>
+                <p><span class="circle"></span><strong>Prépa MPSI PSI</strong><br>
                     Lycée Michel Montaigne, Bordeaux, 2024<br>
                 </p>
             </div>
