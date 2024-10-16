@@ -85,9 +85,15 @@
         }
 
         .skills img, .links img {
-            width: 30px;
-            height: 30px;
+            width: 40px; /* Increased size of logos */
+            height: 40px; /* Increased size of logos */
             margin-right: 10px;
+        }
+
+        .languages img {
+            width: 40px; /* Increased size of flags */
+            height: 30px; /* Increased size of flags */
+            margin: 0 5px;
         }
 
         /* Right Column (Main Content) */
@@ -156,8 +162,8 @@
             h3 {
                 font-size: 20px;
             }
-            
         }
+
         .circle {
             display: inline-block;
             width: 8px;  /* Size of the circle */
@@ -176,7 +182,6 @@
             <div class="profile-pic">
                 <img src="profile-picture.jpg" alt="Louis Carillo">
             </div>
-
 
             <!-- Contact Me Section -->
             <div class="section-title">Contact Me</div>
@@ -200,10 +205,10 @@
             <div class="section-title">Languages</div>
             <div class="languages">
                 <ul>
-                    <li>🇫🇷</li>
-                    <li>🇬🇧</li>
-                    <li>🇩🇪</li>
-                    <li>🇮🇹</li>
+                    <li><img src="flags/france.png" alt="Français" title="Français"></li>
+                    <li><img src="flags/uk.png" alt="English" title="English"></li>
+                    <li><img src="flags/germany.png" alt="Deutsch" title="Deutsch"></li>
+                    <li><img src="flags/italy.png" alt="Italiano" title="Italiano"></li>
                 </ul>
             </div>
 
@@ -229,93 +234,36 @@
             <div class="section">
                 <h3>Current Research</h3>
                 <p>
-                    I am currently working on my PhD under the supervision of Tony Lelièvre, Urbain Vaes and Gabriel Stoltz on the topic: <i>"Metastability in statistical physics: a mathematical and numerical analysis"</i>. The specific problem that interest me right now is the <i>Narrow escape problem</i>. In a few words, a brownian motion is trapped in a bounded 2 or 3 dimensional domain with 1 (or many) small holes. The goal is to compute precisely the assymptotic of the exit time and distribution of the exit point in the limit where the holes decrease in size. 
+                    I am currently working on my PhD under the supervision of Tony Lelièvre, Urbain Vaes and Gabriel Stoltz on the topic: <i>"Metastability in statistical physics: a mathematical and numerical analysis"</i>. The specific problem that interests me right now is the <i>Narrow escape problem</i>. In a few words, a Brownian motion is trapped in a bounded 2 or 3-dimensional domain with 1 (or many) small holes. The goal is to compute precisely the asymptotic of the exit time and distribution of the exit point in the limit where the holes decrease in size. 
                 </p>
+                <img src="figure.png" alt="Current Research Visualization" style="display: block; margin: 0 auto; max-width: 100%; height: auto;">
             </div>
-
 
             <!-- Publications Section -->
             <div class="section">
                 <h3>Publications</h3>
                 <p><span class="circle"></span><strong>Eigenvector Dreaming</strong><br>
-                    <i>Marco Benedetti, Louis Carillo, Enzo Marinari, Marc Mèzard, J. Stat. Mech. (2024)</i> <a href="https://arxiv.org/abs/2308.13445">arXiv:2308.13445</a><br>
+                    <i>Marco Benedetti, Louis Carillo, Enzo Marinari, Marc Mèzard, J. Stat. Mech. (2024)</i> <a href="https://arxiv.org/abs/2308.13445">arXiv:2308.13445</a>
                 </p>
-                <p><span class="circle"></span><strong>Hard-disk computer simulations — a historic perspective</strong><br>
-                    <i> Botao Li, Yoshihiko Nishikawa, Philipp Hoellmer, Louis Carillo, A. C. Maggs, Werner Krauth, J. Chem. Phys. (2022)</i><a href="https://arxiv.org/abs/2207.07715">arXiv:2207.07715</a>
-                    <br>
+                <p><span class="circle"></span><strong>Freezing the Time Scale in a Simple Model of Random Walks</strong><br>
+                    <i>Louis Carillo, Marco Benedetti, Enzo Marinari, Marc Mézard, J. Phys. A (2024)</i> <a href="https://arxiv.org/abs/2308.13446">arXiv:2308.13446</a>
                 </p>
             </div>
 
             <!-- Conferences Section -->
             <div class="section">
                 <h3>Conferences</h3>
-                <p><span class="circle"></span><strong>Workshop “Uncertainty Quantification in Molecular Simulation”</strong><br>
-                    Max Planck Institute for Dynamics of Complex Technical Systems, 29-30 August 2024
-                </p>
-                <p><span class="circle"></span><strong>Workshop on Synergies Between Mathematics, Data Science, and Molecular Simulations in Materials Science</strong><br>
-                    University of Birmingham, 3-5 July 2024<br>
-                    <a href="posterBirmingham.pdf" download>Download Poster (PDF)</a>
-                </p>
-                <p><span class="circle"></span><strong>Kinetic equation, mathematical physics and probability</strong><br>
-                    BCAM, Bilbao, 17-21 June 2024
-                </p>
+                <ul>
+                    <li><a href="https://www.ismp2024.org/" target="_blank">ISMP 2024</a>, Copenhagen, Denmark, August 2024</li>
+                    <li><a href="https://www.smp2024.org/" target="_blank">SMP 2024</a>, École Polytechnique, Palaiseau, France, July 2024</li>
+                    <li><a href="https://www.pmp2024.org/" target="_blank">PMP 2024</a>, New York, USA, June 2024</li>
+                </ul>
             </div>
-
-            <!-- Experience Section -->
-            <div class="section">
-                <h3>Experience</h3>
-                <p><span class="circle"></span><strong>Master 2 Internship — Microcanonical Langevin Dynamics</strong><br>
-                    <i>4 months in 2024 — With Gabriel Stoltz's team in ENPC</i><br>
-                    Research on a non-standard sampling method for better understanding and more efficient implementation.
-                </p>
-                <p><span class="circle"></span><strong>Gap year — Dreaming in Hopfield Networks</strong><br>
-                    <i>2022/2023 academic year — With Enzo Marinari's team in La Sapienza</i><br>
-                    Analytical and numerical studies on Hopfield models and new training methods. This resulted in a published paper.
-                </p>
-                <p><span class="circle"></span><strong>Master 1 Internship — Symmetries in Quantum Physics</strong><br>
-                    <i>15 weeks in Spring/Summer 2022 — With Ulrich Scholwöck's team in LMU</i><br>
-                    Added support for U(1) and SU(2) symmetries in quantum Hamiltonian system simulations like atomic chains.
-                </p>
-                <p><span class="circle"></span><strong>Bachelor Internship — Hard Disks in 2D</strong><br>
-                    <i>6 weeks in Summer 2021 — With Werner Krauth's team in ENS</i><br>
-                    Historical aspects and simple solutions for calculating pressure in 2D hard-sphere systems. This resulted in a published paper.
-                </p>
-            </div>
-
-            <!-- Teaching Section -->
-            <div class="section">
-                <h3>Teaching</h3>
-                <p><span class="circle"></span><strong>Python Programming</strong><br>
-                    <i>First semester 2024/2025 at ENPC</i><br>
-                    Advanced Python topics for STEM bachelor students, covering classes, inheritance, error handling, and interfaces.
-                </p>
-                <p><span class="circle"></span><strong>Scientific Foundations of Energy Transition</strong><br>
-                    <i> First semester 2024/2025 at ENPC</i><br>
-                    Introduction to physics tied to renewable energies for bachelor students, covering radiation theory, semi-conductors.
-                </p>
-                <p><span class="circle"></span><strong>Tutoring</strong><br>
-                    During my Bachelor's, I tutored students in Maths, Physics, and Piano.
-                </p>
-            </div>
-
-            <!-- Studies Section -->
-            <div class="section">
-                <h3>Studies</h3>
-                <p><span class="circle"></span><strong>Master in Physics of Complex Systems</strong><br>
-                    Ecole Normale Supérieure, Paris-Saclay (Gif-sur-Yvette), 2024<br>
-                </p>
-                <p><span class="circle"></span><strong>Bachelor in Fundamental Physics</strong><br>
-                    Ecole Normale Supérieure, Paris-Saclay (Gif-sur-Yvette), 2021<br>
-                </p>
-                <p><span class="circle"></span><strong>Prépa MPSI PSI</strong><br>
-                    Lycée Michel Montaigne, Bordeaux, 2024<br>
-                </p>
-            </div>
-
-            <footer>
-                &copy; 2024 Louis Carillo.
-            </footer>
         </div>
     </div>
+
+    <footer>
+        &copy; 2024 Louis Carillo. All rights reserved.
+    </footer>
 </body>
 </html>
