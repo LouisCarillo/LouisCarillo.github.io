@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 <title>Louis Carillo</title>
-<meta name="description" content="Louis Carillo — PhD student at CERMICS, working on metastability in statistical physics.">
+<meta name="description" content="Louis Carillo — PhD student at CERMICS, working on metastability, the narrow escape problem and sampling methods in statistical physics.">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -54,16 +54,47 @@
                 <em>"Metastability in statistical physics: a mathematical and numerical analysis"</em> at <a href="https://cermics-lab.enpc.fr/" target="_blank"><strong>CERMICS</strong></a>, École des Ponts et Chaussées (IP Paris, CNRS).
                 I am also a member of the <strong>MATHERIALS</strong> project-team at Inria Paris.
             </p>
+            <h3 class="research-subheading">The narrow escape problem</h3>
             <p>
-                The specific problem that interests me right now is the <strong>narrow escape problem</strong>. In a few words, a Brownian motion is trapped in a bounded 2- or 3-dimensional domain with one (or many) small holes. The goal is to compute precisely the asymptotics of the exit time and the distribution of the exit point in the limit where the holes decrease in size.
+                In a few words, a Brownian motion is trapped in a bounded 2- or 3-dimensional domain with one (or many) small holes. The goal is to compute precisely the asymptotics of the exit time and the distribution of the exit point in the limit where the holes decrease in size.
             </p>
             <img class="research-figure" src="figure.png" alt="Illustration of the narrow escape problem">
+
+            <h3 class="research-subheading">Sampling</h3>
+            <p>
+                I am also interested in methods to sample probability measures in high dimension.
+            </p>
+            <p>
+                The <strong>Ensemble Kalman Sampler</strong> evolves a cloud of interacting particles, each driven by a Langevin-type dynamics preconditioned by the empirical covariance of the ensemble. It is derivative-free, which makes it attractive for Bayesian inverse problems where gradients are expensive or unavailable. Most results are stated in the mean-field limit of infinitely many particles; I study the method at the level of the <em>finite particle system</em>, which is what one actually simulates: its invariant measure, its long-time behaviour, and how it depends on the number of particles.
+            </p>
+            <p>
+                <strong>Adaptive biasing methods</strong> (Adaptive Biasing Force, ABF, and Adaptive Biasing Potential, ABP) tackle metastability in molecular dynamics. Along a well-chosen reactive coordinate, the dynamics is biased on the fly by the current estimate of the free energy (ABP) or of its gradient, the mean force (ABF). This flattens the landscape along that coordinate, so the system no longer stays stuck in metastable states, and the free energy is obtained as a by-product. The performance of these algorithms is well understood for energetic traps, but not for entropic traps such as the narrow escape problem.
+            </p>
+
             <ul class="research-topics">
                 <li><strong>Metastability</strong><br>Long-time behaviour of stochastic processes trapped near local energy minima.</li>
                 <li><strong>Narrow escape problem</strong><br>Asymptotics of exit times and exit distributions through small openings.</li>
+                <li><strong>Interacting particle samplers</strong><br>Ensemble Kalman Sampler at the finite particle level.</li>
+                <li><strong>Free energy methods</strong><br>Adaptive biasing algorithms (ABF, ABP) for molecular dynamics.</li>
                 <li><strong>Molecular dynamics</strong><br>Sampling and transport coefficients in statistical physics.</li>
                 <li><strong>Numerical analysis</strong><br>Mathematical and computational methods for stochastic simulation.</li>
             </ul>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2 class="section-heading">Square Harness</h2>
+        <div class="research-intro">
+            <p>
+                Together with <a href="https://vincentboulard.fr/" target="_blank"><strong>Vincent Boulard</strong></a> (PhD student at CERMICS and LJLL), I develop <strong>Square Harness</strong>, an open-source tool for doing mathematical research with language models. A <em>harness</em> is the software layer around a model: it decides what context the model sees, which tools it can use, and how results are tracked. This allows <strong>agentic use</strong>: rather than answering a single prompt, the model works on its own through long, multi-step tasks, calling tools and checking its own results along the way.
+            </p>
+            <p>
+                This harness has been designed with practicality and daily usage in mind, not raw performance. While a key feature of the harness is to enhance the model's ability to write mathematical proofs, it also lets it write proper LaTeX in a constrained style, do literature reviews and explain complex proofs. Square Harness runs on open-weight models served locally (Ollama, llama.cpp, or any OpenAI-compatible server). The aim is AI tools for mathematics that researchers and institutions can run and audit themselves.
+            </p>
+            <div class="project-links">
+                <a href="https://vincentboulard.fr/blog/introducing-square-harness" target="_blank">Read the announcement &rarr;</a>
+                <a href="https://github.com/vincentboulard/Square-Harness" target="_blank">Code on GitHub &rarr;</a>
+            </div>
         </div>
     </div>
 
